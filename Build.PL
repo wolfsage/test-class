@@ -25,6 +25,9 @@ my $build = Module::Build->new(
         'Test::Exception'       => '0.25',
         'IO::File'              => '1.09',
     },
+    configure_requires => {
+        'Test::Builder'         => '0.78',
+    },
     meta_merge => {
         resources => {
             repository => 'http://github.com/adrianh/test-class/',
